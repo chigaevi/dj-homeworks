@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Рабочий каталог</title>
+</head>
+<body>
+    <h2>Список файлов в рабочем каталоге</h2>
+    {% for name in list_dir %}
+        <a>{{ name }}</a>
+        <br>
+    {% endfor %}
+    <br>
+    <a href="{{ home }}">{{ 'Домой' }}</a>
+</body>
+</html>
